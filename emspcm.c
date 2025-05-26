@@ -1201,11 +1201,10 @@ int main(int argc, char *argv[])
 		for(lowmode = 1;freq > 4000;lowmode<<=1){ //8kまでは下げることにしたがまだきつい ので4000まで下げる
 			freq >>= 1;//周波数を半減していく
 		}
-	 }else{
+	 else
 		for(lowmode = 1;freq > 2000;lowmode<<=1){ //286未満では2kまで下げることにした
 			freq >>= 1;//周波数を半減していく
 		}
-	 }
 	printf("play with %uHz ",freq);
 	}
 	if(BeepBuf[34] == 8){//unsigned 8bit PCM
